@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+<h1>JavaScript HTML Events</h1>
+<!-- En este ejemplo, el contenido del h1 elemento cambia cuando un usuario hace clic en él:*/ -->
+<h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1>
+<!-- En este ejemplo, se llama a una función desde el controlador de eventos: -->
+<h1 onclick="changeText(this)">Click on this text!</h1>
+<Script src="practicas.js"> </script>
+<!-- Para asignar eventos a elementos HTML puedes utilizar atributos de evento. -->
+<button onclick="displayDate()">Try it</button>
+<!-- Los eventos onloady onunloadse activan cuando el usuario ingresa o sale de la página. -->
+<!-- Los eventos onloady onunloadse pueden utilizar para tratar las cookies. -->
+<body onload="checkCookies()"></body>
+<!-- El oninputevento consiste a menudo en alguna acción mientras el usuario ingresa datos. -->
+<input type="text" id="fname" oninput="upperCase()">   
+<!-- El onchangeevento se utiliza a menudo en combinación con la validación de campos de entrada. -->
+<input type="text" id="fname" onchange="upperCase()">
+
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onmouseover Attribute</h2>
+    
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+    Mouse Over Me</div>
+    
+    <script>
+    function mOver(obj) {
+      obj.innerHTML = "Thank You"
+    }
+    
+    function mOut(obj) {
+      obj.innerHTML = "Mouse Over Me"
+    }
+    </script>
+
+</body>
+</html>
+
